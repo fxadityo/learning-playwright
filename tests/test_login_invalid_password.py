@@ -7,7 +7,7 @@ def test_login_invalid_username():
         page = browser.new_page()
 
         # Set default timeout (optional, global)
-        page.set_default_timeout(5000)
+        page.set_default_timeout(7000)
 
         # Navigate to login page
         page.goto(
@@ -36,6 +36,6 @@ def test_login_invalid_username():
         expect(page).to_have_url("https://practice.expandtesting.com/login")
 
         # Optional delay (debug)
-        page.wait_for_timeout(5000)
+        page.wait_for_timeout(7000)
 
         browser.close()

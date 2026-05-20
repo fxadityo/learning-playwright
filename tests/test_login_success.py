@@ -7,7 +7,7 @@ def test_login_success():
         page = browser.new_page()
 
         # Set default timeout (optional, global)
-        page.set_default_timeout(5000)
+        page.set_default_timeout(7000)
 
         # Navigate ke login page dengan timeout 30 detik
         page.goto(
@@ -47,6 +47,6 @@ def test_login_success():
         expect(page.locator("#flash")).to_contain_text("You logged out of the secure area!")
 
         # Optional delay biar kelihatan
-        page.wait_for_timeout(5000)
+        page.wait_for_timeout(7000)
 
         browser.close()
