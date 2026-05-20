@@ -1,4 +1,3 @@
-# learning-playwright
 # 🎯 Learning Playwright Automation
 
 ## 📌 Description
